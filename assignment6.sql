@@ -72,7 +72,7 @@ inner join movie m on i.mv_no = m.mv_no
 where m.type = 'Action';
 
 -- 5
-select 'The movie taken by '|| customer.fname || ' ' || customer.lname || ' is ' || m.title || '.'
+select 'The movie taken by '|| customer.fname || ' ' || customer.lname || ' is ' || m.title || '.' "Customer details"
 from customer
 inner join invoice i on customer.cust_id = i.cust_id
 inner join movie m on i.mv_no = m.mv_no
