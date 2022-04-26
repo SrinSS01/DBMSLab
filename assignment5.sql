@@ -4,7 +4,7 @@ create table client_master (
     name varchar2(20) unique,
     address1 varchar2 (30),
     state varchar2 (30),
-    city varchar2 (15)
+    city varchar2 (15) check ( city in ('Delhi', 'Mumbai', 'Chennai') )
 );
 
 insert into client_master values ('C01', 'Ivaan', 'Church Rd', 'Maharashtra', 'Mumbai');
